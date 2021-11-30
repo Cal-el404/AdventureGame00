@@ -26,11 +26,11 @@ def choice(items, enemy):
                      "1. Go to the village tavern.\n"
                      "2. Travel along the roadway.\n"
                      "3. Hike up into the mountain.\n").lower()
-    if '1' in response:
+    if response == '1':
         tavern(items, enemy)
-    elif '2' in response:
+    elif response == '2':
         black_knight(items, enemy)
-    elif '3' in response:
+    elif response == '3':
         mountain(items, enemy)
     else:
         choice(items, enemy)
